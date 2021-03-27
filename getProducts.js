@@ -11,8 +11,6 @@ const getProducts = (req, res) => {
     .json(
       filteredProductsByValue.length > 0 ? filteredProductsByValue : products
     );
-
-  console.log(filteredProductsByValue);
 };
 
 module.exports = getProducts;
